@@ -10,8 +10,8 @@ import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
 import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
+import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtmlsupport.js';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading.js';
-import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed.js';
 import Image from '@ckeditor/ckeditor5-image/src/image.js';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption.js';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle.js';
@@ -43,8 +43,8 @@ Editor.builtinPlugins = [
 	CKFinderUploadAdapter,
 	CloudServices,
 	Essentials,
+	GeneralHtmlSupport,
 	Heading,
-	HtmlEmbed,
 	Image,
 	ImageCaption,
 	ImageStyle,
@@ -89,9 +89,9 @@ Editor.defaultConfig = {
 			'redo',
 			'underline',
 			'strikethrough',
-			'subscript',
 			'superscript',
-			'htmlEmbed'
+			'subscript',
+			'CKFinder'
 		]
 	},
 	language: 'en',
